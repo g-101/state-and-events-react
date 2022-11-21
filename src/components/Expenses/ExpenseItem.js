@@ -7,10 +7,9 @@ export const ExpenseItem = props => {
   // com o unico parametro recebemos todos os dados que foram passado a esse componente.
   // o parametro props recebe um objeto com todos os atributos.
   console.log(props.expense);
+  const clickHandler = () => alert('Clicked!');
 
-  // Um componente retorna apenas um elemento por vez
   return (
-    //  para aplicar o css colocamos className. Aqui o JSX por debaixo dos panos é apenas javascript no final.
     // children são componentes dentro de outro custom componente.
     <Card className="expense-item">
       <ExpenseDate date={props.expense.date} />
@@ -18,6 +17,9 @@ export const ExpenseItem = props => {
         <h2>{props.expense.title}</h2>
         <div className="expense-item__price">${props.expense.amount}</div>
       </div>
+      {/* o react disponibiliza events listeners como propriedades começando com "on" */}
+      {/* o manipulador do evento é passsado como callback no evento */}
+      <button onClick={clickHandler}>Change Title</button>
     </Card>
   );
 };

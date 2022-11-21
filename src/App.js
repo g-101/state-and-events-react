@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>Hello World!</h1>
       {/* Passamos dados para outros componentes atraves de atributos */}
       <Expenses expenses={expenses} />
     </div>
