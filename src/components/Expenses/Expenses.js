@@ -1,4 +1,4 @@
-import './ExpenseItem.css';
+import './Expenses.css';
 // Um componente é apenas uma função em javascript
 // Para usar um componente em qualquer lugar, deve-se exporta-lo.
 export const ExpenseItem = props => {
