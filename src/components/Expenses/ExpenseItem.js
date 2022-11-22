@@ -15,8 +15,9 @@ export const ExpenseItem = props => {
   // você pode nomea-los como quiser, o que importa é a ordem
   // é dessa forma dados são manipulados, usando o state.
 
-  // cada componente tem seu state que funciona em sua instância
-  // sem afetar outros componentes.
+  // o state serve para guardar os dados de um componente
+  // state guarda os dados e que podem ser atualizados.
+  // geralmente manipuladores de eventos(events handlers) atualiza/muda o state.
 
   const clickHandler = () => {
     // setTitle atualiza o valor do state
@@ -25,7 +26,7 @@ export const ExpenseItem = props => {
   };
 
   return (
-    // children são componentes dentro de outro custom componente.
+    // children são componentes dentro de outro componente customizado.
     <Card className="expense-item">
       <ExpenseDate date={props.expense.date} />
       <div className="expense-item__description">

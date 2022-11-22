@@ -1,4 +1,5 @@
 import { Expenses } from './components/Expenses/Expenses';
+import { NewExpense } from './components/NewExpense/NewExpense';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   return (
     <div>
       <h1>Hello World!</h1>
+      <NewExpense />
       {/* Passamos dados para outros componentes atraves de atributos */}
       <Expenses expenses={expenses} />
     </div>
