@@ -24,11 +24,13 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-
+  const addExpenseHandler = expense => {
+    console.log('Em app.js', expense);
+  };
   return (
     <div>
       <h1>Hello World!</h1>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       {/* Passamos dados para outros componentes atraves de atributos */}
       <Expenses expenses={expenses} />
     </div>
